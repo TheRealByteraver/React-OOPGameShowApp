@@ -25,7 +25,8 @@ export default function Qwerty() {
     }
   }
 
-  if (context.gameData.clickedLetters.length === 0) {
+  if (context.gameData.clickedLetters.length === 0 &&
+    context.gameData.missed === 0) {
     // console.log('keyboard was reset');
     resetKeyboard();
   }

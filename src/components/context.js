@@ -34,6 +34,7 @@ export function Provider(props) {
   function startGame() {
     updateGameState(gameStates.playing);
 
+    // Get a random new phrase from phrasedata.js
     const randomIndex = Math.floor(Math.random() * phrases.length);
     const newPhrase = phrases[randomIndex];
 
